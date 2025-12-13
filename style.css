@@ -1,0 +1,96 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e1e2f, #2b2b44);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    gap: 20px;
+}
+
+/* Game buttons */
+button {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background: #4f46e5;
+    color: white;
+    transition: transform 0.15s ease, background 0.15s ease;
+}
+
+button:hover:not(:disabled) {
+    background: #6366f1;
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background: #555;
+    cursor: not-allowed;
+}
+
+/* Emoji buttons */
+#rock,
+#paper,
+#scissors {
+    font-size: 2.5rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #111827;
+    border: 2px solid #4f46e5;
+}
+
+#rock:hover,
+#paper:hover,
+#scissors:hover {
+    background: #1f2933;
+}
+
+/* Layout for choice buttons */
+#rock,
+#paper,
+#scissors {
+    margin: 0 8px;
+}
+
+/* Result text */
+#result {
+    font-size: 2rem;
+    min-height: 50px;
+    text-align: center;
+}
+
+/* Score */
+#score {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Winner message */
+#winner {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #22c55e;
+    text-align: center;
+}
+
+/* Reset button */
+#reset {
+    margin-top: 10px;
+    background: #dc2626;
+}
+
+#reset:hover {
+    background: #ef4444;
+}
