@@ -25,8 +25,13 @@ resetButton.textContent = "RESET GAME";
 score.textContent = "Score - You: 0 | Computer: 0"
 
 
-document.body.append(result, score, winnerMessage, resetButton);
+const rpsDiv = document.querySelector("#rps");
 
+document.body.insertBefore(result, rpsDiv);
+document.body.insertBefore(score, rpsDiv);
+document.body.insertBefore(winnerMessage, rpsDiv);
+
+document.body.append(resetButton);
 
 function playRound(humanChoice, computerChoice) {
 
